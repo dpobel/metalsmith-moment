@@ -1,0 +1,32 @@
+{
+  "name": "metalsmith-moment",
+  "version": "1.0.0",
+  "description": "Metalsmith plugin to convert a set of file metadata to moment date objects",
+  "main": "moment.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpobel/metalsmith-moment.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "plugins"
+  ],
+  "author": "Damien Pobel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpobel/metalsmith-moment/issues"
+  },
+  "homepage": "https://github.com/dpobel/metalsmith-moment",
+  "dependencies": {
+    "moment": "^2.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
