@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/dpobel/metalsmith-moment",
   "dependencies": {
-    "moment": "^2.11.0"
+    "moment": "^2.22.1"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "mocha": "^5.1.1"
   }
 }
