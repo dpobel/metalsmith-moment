@@ -4,8 +4,6 @@ A Metalsmith plugin to convert a set of file metadata to
 [moment.js](http://momentjs.com) objects.
 
 [![Build Status](https://travis-ci.org/dpobel/metalsmith-moment.svg)](https://travis-ci.org/dpobel/metalsmith-moment)
-[![Dependency
-Status](https://gemnasium.com/dpobel/metalsmith-moment.svg)](https://gemnasium.com/dpobel/metalsmith-moment)
 
 ## Installation
 
