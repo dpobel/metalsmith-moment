@@ -23,6 +23,9 @@
     "url": "https://github.com/dpobel/metalsmith-moment/issues"
   },
   "homepage": "https://github.com/dpobel/metalsmith-moment",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
     "moment": "^2.22.1"
   },
