@@ -30,6 +30,6 @@
     "moment": "^2.22.1"
   },
   "devDependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^9.0.1"
   }
 }
