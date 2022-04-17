@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-moment",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Metalsmith plugin to convert a set of file metadata to moment date objects",
   "main": "moment.js",
   "directories": {
