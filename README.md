@@ -12,14 +12,14 @@ A Metalsmith plugin to convert a set of file metadata to
 ## JavaScript usage
 
 ```js
-var msMoment = require('metalsmith-moment');
+const msMoment = require("metalsmith-moment");
 
-metalsmith.use(msMoment(['published', 'modified']));
+metalsmith.use(msMoment(["published", "modified"]));
 ```
 
 This will convert the `published` and `modified` properties to moment.js objects
 by applying [moment.js parsing rules](http://momentjs.com/docs/#/parsing/). Any
-*falsy* property is just ignored.
+_falsy_ property is just ignored.
 
 ## CLI usage
 
