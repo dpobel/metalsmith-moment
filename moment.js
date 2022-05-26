@@ -1,16 +1,16 @@
-var moment = require('moment');
+var moment = require("moment");
 
 module.exports = function (opts) {
-    return function (files, metalsmith, done) {
-        Object.keys(files).forEach(function (filePath) {
-            var file = files[filePath];
+  return function (files, metalsmith, done) {
+    Object.keys(files).forEach(function (filePath) {
+      var file = files[filePath];
 
-            opts.forEach(function (property) {
-                if ( file[property] ) {
-                    file[property] = moment(file[property]);
-                }
-            });
-        });
-        done();
-    };
+      opts.forEach(function (property) {
+        if (file[property]) {
+          file[property] = moment(file[property]);
+        }
+      });
+    });
+    done();
+  };
 };
