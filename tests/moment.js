@@ -1,16 +1,16 @@
 /* global describe, it */
-var msMoment = require("../moment"),
-  moment = require("moment"),
-  assert = require("assert"),
-  metalsmith = false;
+const msMoment = require("../moment");
+const moment = require("moment");
+const assert = require("assert");
+const metalsmith = false;
 
 describe("Metalsmith date", function () {
-  var properties = ["created", "updated"],
-    created = "2012-01-05",
-    updated = "2013-01-05";
+  const properties = ["created", "updated"];
+  const created = "2012-01-05";
+  const updated = "2013-01-05";
 
   it("should create moment.js objects", function () {
-    var files = {
+    const files = {
       file1: {
         created: created,
         updated: updated,
@@ -31,16 +31,16 @@ describe("Metalsmith date", function () {
   });
 
   it("should handle missing field", function () {
-    var file3 = {},
-      files = {
-        file1: {
-          created: created,
-        },
-        file2: {
-          updated: updated,
-        },
-        file3: file3,
-      };
+    const file3 = {};
+    const files = {
+      file1: {
+        created: created,
+      },
+      file2: {
+        updated: updated,
+      },
+      file3: file3,
+    };
 
     msMoment(properties)(files, metalsmith, function () {
       assert.ok(files.file1.created.isSame(moment(created)));
