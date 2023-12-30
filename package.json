@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npm run lint && ./node_modules/.bin/mocha tests",
-    "lint": "./node_modules/.bin/eslint *.js"
+    "test": "npm run lint && mocha tests",
+    "lint": "prettier -c . && eslint ."
   },
   "repository": {
     "type": "git",
