@@ -1,4 +1,3 @@
-/* global describe, it */
 const msMoment = require("../moment");
 const moment = require("moment");
 const assert = require("assert");
