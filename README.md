@@ -7,7 +7,7 @@ A Metalsmith plugin to convert a set of file metadata to
 
 ## Installation
 
-This plugin requires Node.js 18 or later
+This plugin requires Node.js 20 or later
 
     $ npm install metalsmith-moment
 
