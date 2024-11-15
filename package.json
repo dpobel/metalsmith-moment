@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/dpobel/metalsmith-moment",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "moment": "^2.22.1"
