@@ -1,14 +1,15 @@
+const { describe, it } = require("node:test");
 const msMoment = require("../moment");
 const moment = require("moment");
 const assert = require("assert");
 const metalsmith = false;
 
-describe("Metalsmith date", function () {
+describe("Metalsmith date", () => {
   const properties = ["created", "updated"];
   const created = "2012-01-05";
   const updated = "2013-01-05";
 
-  it("should create moment.js objects", function () {
+  it("should create moment.js objects", () => {
     const files = {
       file1: {
         created: created,
@@ -20,7 +21,7 @@ describe("Metalsmith date", function () {
       },
     };
 
-    msMoment(properties)(files, metalsmith, function () {
+    msMoment(properties)(files, metalsmith, () => {
       assert.ok(files.file1.created.isSame(moment(created)));
       assert.ok(files.file1.updated.isSame(moment(updated)));
 
@@ -29,7 +30,7 @@ describe("Metalsmith date", function () {
     });
   });
 
-  it("should handle missing field", function () {
+  it("should handle missing field", () => {
     const file3 = {};
     const files = {
       file1: {
@@ -41,7 +42,7 @@ describe("Metalsmith date", function () {
       file3: file3,
     };
 
-    msMoment(properties)(files, metalsmith, function () {
+    msMoment(properties)(files, metalsmith, () => {
       assert.ok(files.file1.created.isSame(moment(created)));
 
       assert.ok(files.file2.updated.isSame(moment(updated)));
